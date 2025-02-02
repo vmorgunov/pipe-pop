@@ -27,7 +27,7 @@ After=network.target
 Wants=network-online.target
 
 [Service]
-ExecStart=$HOME/opt/dcdn/pop --ram=8 --pubKey $PUB_KEY --max-disk 300 --cache-dir $HOME/opt/dcdn/download_cache
+ExecStart=$HOME/opt/dcdn/pop --ram=4 --pubKey $PUB_KEY --max-disk 150 --cache-dir $HOME/opt/dcdn/download_cache
 Restart=always
 RestartSec=5
 LimitNOFILE=65536

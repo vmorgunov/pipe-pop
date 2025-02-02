@@ -9,9 +9,11 @@ $HOME/opt/dcdn/pop --refresh
 
 sudo systemctl start pop
 
-cd $HOME
+
 
 echo "-----------------------------------------------------------------------------"
 echo "Проверка логов"
 echo "journalctl -n 100 -f -u pop -o cat"
 echo "-----------------------------------------------------------------------------"
+
+cd $HOME
