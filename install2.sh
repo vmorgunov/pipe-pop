@@ -10,7 +10,7 @@ read REF
 cd $HOME
 sudo mkdir -p $HOME/opt/dcdn/download_cache
 
-sudo wget -O $HOME/opt/dcdn/pop "https://dl.pipecdn.app/v0.2.5/pop"
+sudo wget -O $HOME/opt/dcdn/pop "https://dl.pipecdn.app/v0.2.6/pop"
 
 sudo chmod +x $HOME/opt/dcdn/pop
 sudo ln -s $HOME/opt/dcdn/pop /usr/local/bin/pop -f
