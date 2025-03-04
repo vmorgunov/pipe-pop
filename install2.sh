@@ -10,7 +10,7 @@ read REF
 cd $HOME
 sudo mkdir -p $HOME/opt/dcdn/download_cache
 
-sudo wget -O $HOME/opt/dcdn/pop "https://dl.pipecdn.app/v0.2.6/pop"
+sudo wget -O $HOME/opt/dcdn/pop "https://dl.pipecdn.app/v0.2.8/pop"
 
 sudo chmod +x $HOME/opt/dcdn/pop
 sudo ln -s $HOME/opt/dcdn/pop /usr/local/bin/pop -f
@@ -27,7 +27,7 @@ After=network.target
 Wants=network-online.target
 
 [Service]
-ExecStart=$HOME/opt/dcdn/pop --ram=4 --pubKey $PUB_KEY --max-disk 150 --cache-dir $HOME/opt/dcdn/download_cache
+ExecStart=$HOME/opt/dcdn/pop --ram=16 --pubKey $PUB_KEY --max-disk 200 --cache-dir $HOME/opt/dcdn/download_cache --enable-80-443
 Restart=always
 RestartSec=5
 LimitNOFILE=65536
